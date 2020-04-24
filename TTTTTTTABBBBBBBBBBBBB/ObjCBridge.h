@@ -11,7 +11,7 @@
 
 #import <EstimoteSDK/EstimoteSDK.h>
 
-#import "EstimoteBluetoothScanning"
+#import "EstimoteBluetoothScanning" //not found aber verstehe nicht wieso
 #import "EstimoteBluetoothScanning.EBSScanInfo"
 #import "EstimoteBluetoothScanning.EBSScanInfoEstimoteEncrypted"
 #import "EstimoteBluetoothScanning.EBSScanInfoEstimoteLocation"

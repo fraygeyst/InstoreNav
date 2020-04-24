@@ -15,6 +15,7 @@ class BeaconViewController: UIViewController {
 
     let beaconManager = ESTBeaconManager()
     let beaconRegion = CLBeaconRegion(
+        //Generiert von Estimote Cloud zur Verknüpfung
         proximityUUID: UUID(uuidString: "F83BE8EA-5059-1A94-49A5-8B5B3A739236")!,
         identifier: "Estimote D5")
   
@@ -102,7 +103,7 @@ extension BeaconViewController: CLLocationManagerDelegate, CBPeripheralDelegate,
         print("connect")
     }
     
-    
+    //delegates etc um sie in einer einzigen Klasse beim Appstart auszuführen. Übersichtlichkeit im Main Code
     func helper() {
         locationManager = CLLocationManager()
         locationManager.delegate = self

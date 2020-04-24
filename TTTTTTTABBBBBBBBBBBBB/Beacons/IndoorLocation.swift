@@ -24,7 +24,7 @@ class IndoorLocation: UIViewController, EILIndoorLocationManagerDelegate  {
             self.locationManager.delegate = self
             
             
-            //connection to Estimote Cloud
+            //connection to Estimote Cloud, bei einer neuen App muss AppToken und setupID von Estimote Cloud neu generiert werden und diese hier ersetzen
             ESTConfig.setupAppID("<tttttttabbbbbbbbbbbbb-33l>", andAppToken: "acdfd3ae0d396ed937c3743c81775f0c")
 
             let fetchLocationRequest = EILRequestFetchLocation(locationIdentifier: "baumarkt")
