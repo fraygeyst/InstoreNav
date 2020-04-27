@@ -155,7 +155,6 @@ extension BeaconViewController: CLLocationManagerDelegate, CBPeripheralDelegate,
     
     func beaconManager(_ manager: Any, didRangeBeacons beacons: [CLBeacon],in region: CLBeaconRegion) {
         if let nearestBeacon = beacons.first, let places = placesNearBeacon(nearestBeacon) {
-           // TODO: update the UI here
            print(places) // TODO: remove after implementing the UI
        }
    }
